@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProdutosController;
+use App\Http\Controllers\RecadosController;
 use App\Http\Controllers\UsuariosController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,3 +49,26 @@ Route::get('/login', [UsuariosController::class, 'login'])->name('login');
 Route::post('/login', [UsuariosController::class, 'login']);
 
 Route::get('/logout', [UsuariosController::class, 'logout'])->name('logout');
+
+//Rotas relacionadas a recados (inserir, editar e apagar recados)
+
+Route::get('recados', [RecadosController::class, 'index'])->name('recados.index');
+
+Route::prefix('recados')->group(function() {
+    
+    // inserir recado
+    Route::get('/inserir', [RecadosController::class, 'create'])->name('recados.inserir');
+
+    Route::post('/inserir', [RecadosController::class, 'insert'])->name('recados.gravar');
+
+    // editar recado
+    Route::get('/{recado}/editar', [RecadosController::class, 'edit'])->name('recados.edit');
+
+    Route::put('/{recado}/editar', [RecadosController::class, 'update'])->name('recados.update');
+
+    // apagar recado
+    Route::get('/{recado}/apagar', [RecadosController::class, 'remove'])->name('recados.remove');
+
+    Route::delete('/{recado}/apagar', [RecadosController::class, 'delete'])->name('recados.delete');
+
+});
