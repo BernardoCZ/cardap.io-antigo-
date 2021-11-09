@@ -7,31 +7,44 @@
     <title>@yield('title')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        header {
+          background-color: #ff6347;
+        }
+    </style>
 </head>
 <body>
 
-    <header class="p-3 bg-dark text-white mb-3">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="{{route('home')}}" class="nav-link px-2 @if ($pagina == 'home') text-secondary @else text-white @endif">Inicial</a></li>
-          <li><a href="{{route('produtos')}}" class="nav-link px-2 @if ($pagina == 'produtos') text-secondary @else text-white @endif">Produtos</a></li>
-          <li><a href="/usuarios" class="nav-link px-2 @if ($pagina == 'usuarios') text-secondary @else text-white @endif">Usuários</a></li>
-          <li><a href="/recados" class="nav-link px-2 @if ($pagina == 'recados') text-secondary @else text-white @endif">Recados</a></li>
-        </ul>
+    <header class="py-3 mb-3 border-bottom">
+      <div class="container d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr 1fr;">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-start">
+            <img src="../img/logov2.png" height="10.08px" width="30px" alt="Logo do Cardap.io">
+        </a>
+
+        <form class="w-100 me-3 text-center">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
 
         <div class="text-end">
+          
           @if (session('usuario'))
-            Olá, {{ session('usuario.nome') }}!
-            <a href="{{ route('logout') }}" role="button" class="btn btn-outline-danger">Sair</a>
+          <div class="flex-shrink-0 dropdown">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="#" alt="Usuário" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
+              <li><a class="dropdown-item" href="#">{{ session('usuario.nome') }}</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{ route('logout') }}">Deslogar</a></li>
+            </ul>
+          </div>
           @else
-            <a href="{{ route('login') }}" role="button" class="btn btn-outline-light me-2">Login</a>
-            <a href="{{ route('usuarios.inserir') }}" role="button" class="btn btn-warning">Cadastro</a>
+          <a href="{{ route('login') }}" role="button" class="btn btn-outline-light me-2">Login</a>
+          <a href="{{ route('usuarios.inserir') }}" role="button" class="btn btn-warning">Cadastro</a>
           @endif
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <div class="container">
         <div class="row">
