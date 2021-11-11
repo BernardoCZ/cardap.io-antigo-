@@ -15,6 +15,11 @@ class ProdutosController extends Controller
         return view('produtos.index', ['prods' => $produtos, 'pagina' => 'produtos']);
     }
 
+    public function search()
+    {
+        return view('produtos.search');
+    }
+
     public function show(Produto $prod)
     {
         return view('produtos.show', ['prod' => $prod, 'pagina' => 'produtos']);

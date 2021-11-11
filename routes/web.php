@@ -17,10 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('usuarios.login', ['pagina' => 'home']);
+    return view('produtos.search');
 })->name('home');
 
 Route::get('produtos', [ProdutosController::class, 'index'])->name('produtos');
+
+Route::get('/buscar', [ProdutosController::class, 'search'])->name('produtos.buscar');
 
 Route::get('/produtos/inserir', [ProdutosController::class, 'create'])->name('produtos.inserir');
 
@@ -49,6 +51,9 @@ Route::get('/login', [UsuariosController::class, 'login'])->name('login');
 Route::post('/login', [UsuariosController::class, 'login']);
 
 Route::get('/logout', [UsuariosController::class, 'logout'])->name('logout');
+
+Route::get('/cadastro', [UsuariosController::class, 'create'])->name('cadastro');
+
 
 //Rotas relacionadas a recados (inserir, editar e apagar recados)
 

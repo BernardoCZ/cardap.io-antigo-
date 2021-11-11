@@ -16,7 +16,7 @@
         </div>
         <button class="w-100 btn btn-lg btn-light" type="submit">Entrar</button>
         <div class="mb-3" style="margin-top: 1rem">
-            <a href="{{ route('usuarios.inserir') }}" class="text-white">Ainda não está cadastrado? Cadastre-se agora!</a>
+            <a href="{{ route('cadastro') }}" class="text-white">Ainda não está cadastrado? Cadastre-se agora!</a>
         </div>
     </form>
 @endsection
