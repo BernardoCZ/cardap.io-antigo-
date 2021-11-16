@@ -11,6 +11,25 @@
         header {
           background-color: #ff6347;
         }
+        .card-img-right {
+          height: 100%;
+          border-radius: 0 3px 3px 0;
+        }
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+        .card-text {
+          font-size: 0.9rem
+        }
+        .card-img-background {
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center; 
+        }
     </style>
 </head>
 <body>
