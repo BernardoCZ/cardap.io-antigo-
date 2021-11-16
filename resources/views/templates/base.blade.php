@@ -30,6 +30,11 @@
           background-size: contain;
           background-position: center; 
         }
+        .banner-img-background {
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: right center;
+        }
     </style>
 </head>
 <body>

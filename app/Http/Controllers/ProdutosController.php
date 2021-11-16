@@ -20,6 +20,11 @@ class ProdutosController extends Controller
         return view('produtos.search');
     }
 
+    public function cardapio()
+    {
+        return view('produtos.cardapio');
+    }
+
     public function show(Produto $prod)
     {
         return view('produtos.show', ['prod' => $prod, 'pagina' => 'produtos']);

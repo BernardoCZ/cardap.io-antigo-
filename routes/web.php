@@ -54,6 +54,8 @@ Route::get('/logout', [UsuariosController::class, 'logout'])->name('logout');
 
 Route::get('/cadastro', [UsuariosController::class, 'create'])->name('cadastro');
 
+Route::get('/estabelecimento/cardapio', [ProdutosController::class, 'cardapio'])->name('cardapio');
+
 
 //Rotas relacionadas a recados (inserir, editar e apagar recados)
 
