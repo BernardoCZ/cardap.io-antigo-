@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <style>
+        @font-face {
+            font-family: Logo Font;
+            src: url('font/nautilus-pompilius.regular.otf');
+        }
         html, body {
             height: 100%;
         }
@@ -18,6 +22,11 @@
             padding-top: 40px;
             padding-bottom: 40px;
             background-color: #ff6347;
+        }
+
+        .text-logo{
+            font-family: Logo Font;
+            font-size: 3.5rem;
         }
 
         .form-signin {
