@@ -23,7 +23,6 @@
             padding-bottom: 40px;
             background-color: #ff6347;
         }
-
         .text-logo{
             font-family: Logo Font;
             font-size: 3.5rem;
