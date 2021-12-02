@@ -2,9 +2,9 @@
 @section('title', 'Cadastrar-se')
 
 @section('content')
-    <form method="post" action="{{ route('usuarios.gravar') }}">
+    <form method="post" action="#">
         @csrf
-        <h1 class="mb-4 text-white text-logo">Cardap.io</h1>
+        <a href="{{ route('home') }}" class="h1 mb-4 text-white text-logo text-decoration-none">Cardap.io</a>
         <h2 class="h3 mb-3 fw-normal text-white">Registre-se</h1>
         <select class="form-select" aria-label="Default select example">
             <option value="C">Conta Cliente</option>

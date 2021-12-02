@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="../img/icon.ico">
     <style>
         @font-face {
             font-family: Logo Font;
@@ -56,6 +57,19 @@
             display: inline-block;
             -webkit-text-fill-color: transparent;
         }
+        .card {
+          height:100%;
+          transition: 0.25s;
+        }
+        .card-col {
+          padding: 0.5rem 1rem;
+        }
+        .card_busca:hover {
+          filter: grayscale(85%);
+          transition: 0.25s;
+          opacity: 0.85;
+        }
+
     </style>
 </head>
 <body>
@@ -66,7 +80,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="d-flex w-75 m-auto">
+      <form class="d-flex w-75 m-auto" method="get" action="{{ route('produtos.buscar') }}">
         <input class="form-control me-2" type="search" placeholder="Buscar estabelecimento..." aria-label="Buscar estabelecimento">
       </form>
       <div class="text-end">          
@@ -97,5 +111,6 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 </html>
