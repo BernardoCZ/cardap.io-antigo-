@@ -22,8 +22,8 @@
                 <p class="mb-0"><i class="bi bi-geo-alt"></i>  Rua Ednaldo Pereira, 360, Bento Gonçalves, Rio Grande do Sul, Brasil</p>
                 <p class="mb-0"><i class="bi bi-telephone"></i>  (55 54) 99999-9999</p>
             </div>
-            <div class="m-auto" style="font-size: 2rem;">
-                <span style="color: orange; font-weight: bold;">3.6</span>
+            <div class="m-auto text-center">
+                <span style="color: orange; font-weight: bold; font-size: 2rem;">3.6</span>
                 <span class="notas" style="background: linear-gradient(to right, orange 73%, #b7bdc3 0); -webkit-background-clip: text;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -66,6 +66,42 @@
           <h3 class="mb-2">Quarterão com Queijo</h3>
           <strong class="d-inline-block mb-2" style="color: orange">R$ 25,00</strong>
           <p class="card-text mb-auto">Inigualável. Perfeito. Um hambúrguer feito com pura carne bovina, envolvida por duas fatias de queijo e temperado com ketchup, mostarda, cebola e picles.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 card-col">
+      <div class="card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-white" style="background-color: #212529;">
+        <div class="col d-lg-block p-4">
+          <svg style="background-image: url('../img/cheddarmcmelt_example.png')" class="bd-placeholder-img card-img-background" width="100%" height="100%" role="img" aria-label="McDonald's" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-2">Cheddar McMelt</h3>
+          <strong class="d-inline-block mb-2" style="color: orange">R$ 25,00</strong>
+          <p class="card-text mb-auto">Sem palavras para descrever. Feito com carne bovina, delicioso molho sabor cheddar, cebola grelhada ao molho shoyu e para completar um pão escuro com gergelim.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 card-col">
+      <div class="card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-white" style="background-color: #212529;">
+        <div class="col d-lg-block p-4">
+          <svg style="background-image: url('../img/mcnificobacon_example.png')" class="bd-placeholder-img card-img-background" width="100%" height="100%" role="img" aria-label="McDonald's" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-2">McNífico Bacon</h3>
+          <strong class="d-inline-block mb-2" style="color: orange">R$ 30,00</strong>
+          <p class="card-text mb-auto">São 2 saborosas fatias de bacon, alface, cebola, hambúrguer de 120 gramas de carne bovina, queijo derretido, tomate e um trio de delícias: maionese, ketchup e mostarda.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 card-col">
+      <div class="card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative text-white" style="background-color: #212529;">
+        <div class="col d-lg-block p-4">
+          <svg style="background-image: url('../img/duploquarterao_example.png')" class="bd-placeholder-img card-img-background" width="100%" height="100%" role="img" aria-label="McDonald's" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-2">Duplo Quarterão</h3>
+          <strong class="d-inline-block mb-2" style="color: orange">R$ 30,00</strong>
+          <p class="card-text mb-auto">Duplamente inigualável. Dois hambúrgueres, mostarda, ketchup, cebola e, claro, o delicioso queijo cheddar num pão com gergelim.</p>
         </div>
       </div>
     </div>

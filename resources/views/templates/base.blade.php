@@ -56,6 +56,7 @@
         .notas {
             display: inline-block;
             -webkit-text-fill-color: transparent;
+            font-size: 1rem;
         }
         .card {
           height:100%;
@@ -69,7 +70,11 @@
           transition: 0.25s;
           opacity: 0.85;
         }
-
+        @media (min-width: 768px) {
+            .notas {
+              font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>

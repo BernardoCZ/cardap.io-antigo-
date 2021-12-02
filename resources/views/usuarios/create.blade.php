@@ -5,7 +5,7 @@
     <form method="post" action="#">
         @csrf
         <a href="{{ route('home') }}" class="h1 mb-4 text-white text-logo text-decoration-none">Cardap.io</a>
-        <h2 class="h3 mb-3 fw-normal text-white">Registre-se</h1>
+        <h2 class="h3 mb-3 mt-2 fw-normal text-white">Registre-se</h1>
         <select class="form-select" aria-label="Default select example">
             <option value="C">Conta Cliente</option>
             <option value="E">Conta Estabelecimento</option>
