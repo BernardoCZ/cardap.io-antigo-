@@ -12,7 +12,7 @@
         </select>
         <div class="form-floating">
             <input type="text" class="form-control first_input" id="nome" placeholder="Nome completo" name="nome">
-            <label for="nome">Nome completo</label>
+            <label for="nome">Nome</label>
         </div>
         <div class="form-floating">
             <input type="email" class="form-control middle_input" id="email" placeholder="Email" name="email">

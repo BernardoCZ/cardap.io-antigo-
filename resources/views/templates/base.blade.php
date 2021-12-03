@@ -56,7 +56,10 @@
         .notas {
             display: inline-block;
             -webkit-text-fill-color: transparent;
-            font-size: 1rem;
+        }
+        .valor_notas {
+          color: orange;
+          font-weight: bold;
         }
         .card {
           height:100%;
@@ -69,11 +72,6 @@
           filter: grayscale(85%);
           transition: 0.25s;
           opacity: 0.85;
-        }
-        @media (min-width: 768px) {
-            .notas {
-              font-size: 2rem;
-            }
         }
     </style>
 </head>

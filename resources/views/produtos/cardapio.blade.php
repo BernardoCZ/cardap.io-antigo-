@@ -22,8 +22,8 @@
                 <p class="mb-0"><i class="bi bi-geo-alt"></i>  Rua Ednaldo Pereira, 360, Bento Gonçalves, Rio Grande do Sul, Brasil</p>
                 <p class="mb-0"><i class="bi bi-telephone"></i>  (55 54) 99999-9999</p>
             </div>
-            <div class="m-auto text-center">
-                <span style="color: orange; font-weight: bold; font-size: 2rem;">3.6</span>
+            <div class="m-auto text-center" style="font-size: 2rem; font-weight: bold;">
+                <span style="color: orange;">3.6</span>
                 <span class="notas" style="background: linear-gradient(to right, orange 73%, #b7bdc3 0); -webkit-background-clip: text;">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -31,6 +31,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </span>
+                <button type="button" class="btn btn-warning text-white font-weight: bold;">Avaliar</button>
             </div>
         </div>
     </div>

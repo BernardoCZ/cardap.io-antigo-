@@ -21,7 +21,7 @@
           <strong class="d-inline-block mb-2">Fast-food</strong>
           <h3 class="mb-0">McDonald's</h3>
           <div class="mb-1">
-            <span style="color: orange; font-weight: bold;">3.6</span>
+            <span class="valor_notas">3.6</span>
             <span class="notas" style="background: linear-gradient(to right, orange 73%, #f8f9fa 0); -webkit-background-clip: text;">
               <i class="fa fa-star"></i>
               <i class="fa fa-star"></i>
